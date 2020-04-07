@@ -1,0 +1,38 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{% block title %}{% endblock %}| Madera Mandala</title>
+
+ >
+</head>
+
+  <body>
+
+    <ul>
+        <li><a href="{% url 'home' %}">Portada</a></li>
+        <li><a href="{% url 'about' %}">Acerca de </a></li>
+        <li><a href="{% url 'services' %}">Servicios</a></li>
+        <li><a href="{% url 'store' %}">Visitanos</a></li>
+        <li><a href="{% url 'contact' %}">Contacto</a></li>
+        <li><a href="{% url 'blog' %}">Blog</a></li>
+        <li><a href="{% url 'sample' %}">Ejemplos</a></li>
+    </ul>
+
+    <!-- Navegación -->
+    
+    
+    <!-- Cabecera 
+
+    -->
+
+    <!--Contenido-->
+   
+        {% block content %}{% endblock %}
+  
+  </body>
+
+</html>
